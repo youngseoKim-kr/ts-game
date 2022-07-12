@@ -9,7 +9,7 @@ interface Configuration extends WebpackConfiguration {
 }
 
 const config: Configuration = {
-  name: "word-relay-dev",
+  name: "number-baseball-dev",
   mode: "development",
   devtool: "eval",
   resolve: {
@@ -35,7 +35,7 @@ const config: Configuration = {
   output: {
     path: path.join(__dirname, "dist"),
     filename: "[name].js",
-    publicPath: "/dist/",
+    publicPath: "/dist",
   },
   devServer: {
     devMiddleware: { publicPath: "/dist" },
